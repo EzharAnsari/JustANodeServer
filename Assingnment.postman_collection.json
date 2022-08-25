@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "4f99cb3a-e55b-49dd-89e2-fec0f2b84b47",
+		"name": "Assingnment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"ezhar123@gmail.com\",\r\n    \"password\": \"ezhar123\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"ezhar123@gmail.com\",\r\n    \"name\": \"hello\",\r\n    \"password\": \"ezhar123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/user/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "newsApi",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/news?search=bitcoin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"news"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "bitcoin"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "weatherApi",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/weather",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"weather"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "checkNewsApiDefault",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/everything?q=bitcoin&apikey=085cd41830184321ada726cb58773294",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"everything"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "bitcoin"
+						},
+						{
+							"key": "apikey",
+							"value": "085cd41830184321ada726cb58773294"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "checkWeatherApiDefault",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/forecast?lat=12.97&lon=77.59&&appid=ad0894d020e4b9fd2fca847876331356",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"forecast"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "12.97"
+						},
+						{
+							"key": "lon",
+							"value": "77.59"
+						},
+						{
+							"key": null,
+							"value": null
+						},
+						{
+							"key": "appid",
+							"value": "ad0894d020e4b9fd2fca847876331356"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
