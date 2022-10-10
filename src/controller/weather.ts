@@ -78,7 +78,7 @@ class Weather {
 
   async forecast(req: Request, res: Response, next: NextFunction) {
     const url =
-      'https://api.openweathermap.org/data/2.5/forecast?lat=12.97&lon=77.59&&appid=ad0894d020e4b9fd2fca847876331356';
+      'https://api.openweathermap.org/data/2.5/forecast?lat=12.97&lon=77.59&&appid=?';           // Get api key from https://openweathermap.org/
     const encoded = encodeURI(url);
     axios.get(encoded).then((response) => {
       const result: IResponseData = response.data;
