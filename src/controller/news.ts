@@ -53,7 +53,7 @@ class News {
       });
       return;
     }
-    const url = 'https://newsapi.org/v2/everything?q=' + search + '&page=1&apikey=085cd41830184321ada726cb58773294';
+    const url = 'https://newsapi.org/v2/everything?q=' + search + '&page=1&apikey=?';         // Get api key from https://newsapi.org/
     const encoded = encodeURI(url);
     axios.get(encoded).then((response) => {
       const result: IResponseData = response.data;
