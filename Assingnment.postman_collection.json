@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "4f99cb3a-e55b-49dd-89e2-fec0f2b84b47",
-		"name": "Assingnment",
+		"name": "Server",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -133,7 +133,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://newsapi.org/v2/everything?q=bitcoin&apikey=085cd41830184321ada726cb58773294",
+					"raw": "https://newsapi.org/v2/everything?q=bitcoin&apikey=?",
 					"protocol": "https",
 					"host": [
 						"newsapi",
@@ -150,7 +150,7 @@
 						},
 						{
 							"key": "apikey",
-							"value": "085cd41830184321ada726cb58773294"
+							"value": "?"
 						}
 					]
 				}
@@ -163,7 +163,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://api.openweathermap.org/data/2.5/forecast?lat=12.97&lon=77.59&&appid=ad0894d020e4b9fd2fca847876331356",
+					"raw": "https://api.openweathermap.org/data/2.5/forecast?lat=12.97&lon=77.59&&appid=?",
 					"protocol": "https",
 					"host": [
 						"api",
@@ -190,7 +190,7 @@
 						},
 						{
 							"key": "appid",
-							"value": "ad0894d020e4b9fd2fca847876331356"
+							"value": "?"
 						}
 					]
 				}
